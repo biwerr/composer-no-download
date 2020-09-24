@@ -9,12 +9,12 @@ having PHP libraries be physically installed in your /vendor folder.
 composer require adamamont/composer-no-download
 ```
 
-Use env variable COMPOSER-NO-DOWNLOAD with value "apply" for plugin activation
+Use env variable COMPOSER_NO_DOWNLOAD with value "apply" for plugin activation
 
 Example (Jenkins pipeline)
 
 ```$groovy
-withEnv(["COMPOSER-NO-DOWNLOAD=apply"]) {
+withEnv(["COMPOSER_NO_DOWNLOAD=apply"]) {
     sh "composer update"
 }
 ```
